@@ -1,0 +1,95 @@
+{
+  "definitions": {},
+  "$schema": "bookSchema",
+  "$id": "bookSchema",
+  "type": "object",
+  "title": "The Root Schema",  
+  "required": [
+    "isbn",
+    "amazon_url",
+    "author",
+    "language",
+    "pages",
+    "publisher",
+    "title",
+    "year"
+  ],
+  "properties": {
+    "isbn": {
+      "$id": "#/properties/book/properties/isbn",
+      "type": "string",
+      "title": "The Isbn Schema",
+      "default": "",
+      "examples": [
+        "0691161518"
+      ]
+    },
+    "amazon_url": {
+      "$id": "#/properties/book/properties/amazon-url",
+      "type": "string",
+      "title": "The Amazon-url Schema",
+      "default": "",
+      "examples": [
+        "http://a.co/eobPtX2"
+      ],
+      "format": "uri"
+    },
+    "author": {
+      "$id": "#/properties/book/properties/author",
+      "type": "string",
+      "title": "The Author Schema",
+      "default": "",
+      "examples": [
+        "Henry Bobenry"
+      ]
+    },
+    "language": {
+      "$id": "#/properties/book/properties/language",
+      "type": "string",
+      "title": "The Language Schema",
+      "default": "",
+      "examples": [
+        "english"
+      ]
+    },
+    "pages": {
+      "$id": "#/properties/book/properties/pages",
+      "type": "integer",
+      "title": "The Pages Schema",
+      "default": 0,
+      "examples": [
+        582
+      ]
+    },
+    "publisher": {
+      "$id": "#/properties/book/properties/publisher",
+      "type": "string",
+      "title": "The Publisher Schema",
+      "default": "",
+      "examples": [
+        "Penguinos"
+      ]
+    },
+    "title": {
+      "$id": "#/properties/book/properties/title",
+      "type": "string",
+      "title": "The Title Schema",
+      "default": "",
+      "examples": [
+        "The Life and Time of FLopsy the Flippering Penguin"
+      ]
+    },
+    "year": {
+      "$id": "#/properties/book/properties/year",
+      "type": "integer",
+      "title": "The Year Schema",
+      "default": 0,
+      "maximum": 2023,
+      "minimum": 1200,
+      "examples": [
+        1990
+      ]
+    }
+  }
+}
+       

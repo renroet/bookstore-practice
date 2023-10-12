@@ -1,0 +1,83 @@
+{   
+    "definitions": {},
+    "$schema": "bookUpdateSchema",
+    "$id": "bookUpdate",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "author",
+        "language",
+        "pages",
+        "title",
+        "year"
+    ],
+    "properties": {
+        "amazon_url": {
+            "type": "string",
+            "default": "",
+            "title": "The amazon_url Schema",
+            "examples": [
+                "http://text.com"
+            ],
+            "format": "uri"
+        },
+        "author": {
+            "type": "string",
+            "default": "",
+            "title": "The author Schema",
+            "examples": [
+                "Henry Bobenry"
+            ]
+        },
+        "language": {
+            "type": "string",
+            "default": "",
+            "title": "The language Schema",
+            "examples": [
+                "English"
+            ]
+        },
+        "pages": {
+            "type": "integer",
+            "default": 0,
+            "title": "The pages Schema",
+            "examples": [
+                582
+            ]
+        },
+        "publisher": {
+            "type": "string",
+            "default": "",
+            "title": "The publisher Schema",
+            "examples": [
+                "Penguinos"
+            ]
+        },
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "The Life and Times of Flopsy the Flippering Penguin"
+            ]
+        },
+        "year": {
+            "type": "integer",
+            "default": 0,
+            "title": "The year Schema",
+            "examples": [
+                1990
+            ]
+        }
+    },
+    "examples": [{
+        "amazon_url": "http://text.com",
+        "author": "Henry Bobenry",
+        "language": "English",
+        "pages": 582,
+        "publisher": "Penguinos",
+        "title": "The Life and Times of Flopsy the Flippering Penguin",
+        "year": 1990
+    }]
+}
